@@ -5,9 +5,9 @@
   <subtitle>逝者如斯夫 不舍昼夜</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://snow404.github.io/"/>
   <updated>2019-11-25T09:03:29.917Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://snow404.github.io/</id>
   
   <author>
     <name>snow</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/11/25/hello-world/"/>
-    <id>http://yoursite.com/2019/11/25/hello-world/</id>
+    <link href="http://snow404.github.io/2019/11/25/hello-world/"/>
+    <id>http://snow404.github.io/2019/11/25/hello-world/</id>
     <published>2019-11-25T09:03:29.917Z</published>
     <updated>2019-11-25T09:03:29.917Z</updated>
     
