@@ -198,10 +198,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2019-11-28 13:40:22 / 修改时间：13:51:24" itemprop="dateCreated datePublished" datetime="2019-11-28T13:40:22+08:00">2019-11-28</time>
+              <time title="创建时间：2019-11-28 13:40:22" itemprop="dateCreated datePublished" datetime="2019-11-28T13:40:22+08:00">2019-11-28</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-29 10:43:55" itemprop="dateModified" datetime="2019-11-29T10:43:55+08:00">2019-11-29</time>
+              </span>
 
           
 
@@ -214,7 +220,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="初识objdum与GDB"><a href="#初识objdum与GDB" class="headerlink" title="初识objdum与GDB"></a>初识objdum与GDB</h1><h2 id="objdump："><a href="#objdump：" class="headerlink" title="objdump："></a>objdump：</h2><p>objdump主要用于静态分析，因此对于objdump的使用一般调出反汇编内容进行分析。</p>
+          <a id="more"></a><h1 id="初识objdum与GDB"><a href="#初识objdum与GDB" class="headerlink" title="初识objdum与GDB"></a>初识objdum与GDB</h1><h2 id="objdump："><a href="#objdump：" class="headerlink" title="objdump："></a>objdump：</h2><p>objdump主要用于静态分析，因此对于objdump的使用一般调出反汇编内容进行分析。<br><img src="https://img-blog.csdnimg.cn/20191128132611675.png" alt="在这里插入图片描述"><br>这条命令的意思是-d参数打开反汇编程序内容 -M intel参数用于设置汇编代码格式因为ida使用的习惯所以设置为intel  后面跟上文件路径，然后导出为aa.txt文件并打开文件<br><img src="https://img-blog.csdnimg.cn/20191128132822550.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lsbHlhc3ZpZWw0MDQ=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>打开后如图<br>和ida相比没有伪代码等功能只有一个看汇编命令的窗口<br>然后举例说明怎么寻找溢出点<br><img src="https://img-blog.csdnimg.cn/20191128132904337.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lsbHlhc3ZpZWw0MDQ=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>先找到main函数开始查看<br>利用call函数寻找自定义函数跟进查看<br><img src="https://img-blog.csdnimg.cn/20191128132936836.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lsbHlhc3ZpZWw0MDQ=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>然后寻找可能出现溢出的函数 比如fgets函数是读取指定数量的数据并保存到指定地址上 如图是调用函数然后eax入栈 ebp向上开辟0x28的空间然后读取0x32保存到eax当中。<br>因此这就造成了一个缓冲区溢出。<br><img src="https://img-blog.csdnimg.cn/20191128133007462.png" alt="在这里插入图片描述"><br>-t参数可以查看符号表 grep是过滤作用 F是显示函数名<br><img src="https://img-blog.csdnimg.cn/20191128133059888.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lsbHlhc3ZpZWw0MDQ=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20191128133114935.png" alt="在这里插入图片描述"><br>-j参数可以查看指定一个段的内容 还是上道题为例 因为bin/cat flag.txt为字符串所以需要到rodata寻找 -d参数是为了将查找的结果通过反汇编显示出来<br><img src="https://img-blog.csdnimg.cn/20191128133152529.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lsbHlhc3ZpZWw0MDQ=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/#more" rel="contents">
