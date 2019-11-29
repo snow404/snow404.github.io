@@ -40,7 +40,7 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},
     path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     sidebarPadding: 40
@@ -48,6 +48,7 @@
 </script>
 
   <meta name="description" content="初识objdum与GDB">
+<meta name="keywords" content="objdump,GDB">
 <meta property="og:type" content="article">
 <meta property="og:title" content="objdump与GDB教程">
 <meta property="og:url" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;index.html">
@@ -74,7 +75,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191128133711791.png?x-oss-process=image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lsbHlhc3ZpZWw0MDQ=,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191128133736870.png?x-oss-process=image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lsbHlhc3ZpZWw0MDQ=,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191128133744154.png?x-oss-process=image&#x2F;watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lsbHlhc3ZpZWw0MDQ=,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-11-29T02:45:08.835Z">
+<meta property="og:updated_time" content="2019-11-29T03:51:10.613Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;img-blog.csdnimg.cn&#x2F;20191128132611675.png">
 
@@ -166,9 +167,14 @@
     <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
 
   </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">2</span></a>
+
+  </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">0</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">1</span></a>
 
   </li>
   </ul>
@@ -227,8 +233,19 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-29 10:45:08" itemprop="dateModified" datetime="2019-11-29T10:45:08+08:00">2019-11-29</time>
+                <time title="修改时间：2019-11-29 11:51:10" itemprop="dateModified" datetime="2019-11-29T11:51:10+08:00">2019-11-29</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+            </span>
 
           
 
@@ -262,6 +279,10 @@
 </div>
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/objdump/" rel="tag"># objdump</a>
+              <a href="/tags/GDB/" rel="tag"># GDB</a>
+          </div>
 
         
 
@@ -322,6 +343,14 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
   </nav>
 </div>
   <div class="feed-link motion-element">
@@ -355,7 +384,7 @@
   &copy; 
   <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">snow</span>
 </div>
@@ -369,6 +398,8 @@
   </div>
 -->
 
+
+  
         
 
 
