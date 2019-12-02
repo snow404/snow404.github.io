@@ -47,39 +47,36 @@
   };
 </script>
 
-  <meta name="description" content="初识objdum与GDB">
-<meta name="keywords" content="objdump,GDB">
+  <meta name="description" content="Easy_Encryption">
+<meta name="keywords" content="安洵杯,Easy_Encryption">
 <meta property="og:type" content="article">
-<meta property="og:title" content="objdump与GDB教程">
-<meta property="og:url" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;index.html">
+<meta property="og:title" content="第二届安洵杯-逆向-WP">
+<meta property="og:url" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;index.html">
 <meta property="og:site_name" content="snow_博客">
-<meta property="og:description" content="初识objdum与GDB">
+<meta property="og:description" content="Easy_Encryption">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;1.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;2.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;3.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;4.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;5.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;6.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;7.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;8.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;9.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;10.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;11.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;12.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;13.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;14.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;15.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;16.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;17.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;18.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;19.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;20.png">
-<meta property="og:updated_time" content="2019-12-02T08:04:13.581Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;1.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;2.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;3.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;4.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;5.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;6.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;7.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;8.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;9.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;10.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;11.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;12.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;13.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;14.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;15.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;16.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;17.png">
+<meta property="og:updated_time" content="2019-12-02T09:17:27.207Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;11&#x2F;28&#x2F;objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B&#x2F;1.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;snow404.github.io&#x2F;2019&#x2F;12&#x2F;02&#x2F;%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP&#x2F;1.png">
 
-<link rel="canonical" href="http://snow404.github.io/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/">
+<link rel="canonical" href="http://snow404.github.io/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/">
 
 
 <script id="page-configurations">
@@ -93,7 +90,7 @@
   };
 </script>
 
-  <title>objdump与GDB教程 | snow_博客</title>
+  <title>第二届安洵杯-逆向-WP | snow_博客</title>
   
 
 
@@ -203,7 +200,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://snow404.github.io/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="http://snow404.github.io/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/touxiang.jpg">
@@ -216,7 +213,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          objdump与GDB教程
+          第二届安洵杯-逆向-WP
         </h1>
 
         <div class="post-meta">
@@ -225,24 +222,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-11-28 13:40:22" itemprop="dateCreated datePublished" datetime="2019-11-28T13:40:22+08:00">2019-11-28</time>
+              <time title="创建时间：2019-12-02 17:01:38 / 修改时间：17:17:27" itemprop="dateCreated datePublished" datetime="2019-12-02T17:01:38+08:00">2019-12-02</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-02 16:04:13" itemprop="dateModified" datetime="2019-12-02T16:04:13+08:00">2019-12-02</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index">
-                    <span itemprop="name">教程</span>
+                  <a href="/categories/WP/" itemprop="url" rel="index">
+                    <span itemprop="name">WP</span>
                   </a>
                 </span>
             </span>
@@ -265,9 +256,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="初识objdum与GDB"><a href="#初识objdum与GDB" class="headerlink" title="初识objdum与GDB"></a>初识objdum与GDB</h1><a id="more"></a>
-<h2 id="objdump："><a href="#objdump：" class="headerlink" title="objdump："></a>objdump：</h2><p>objdump主要用于静态分析，因此对于objdump的使用一般调出反汇编内容进行分析。<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/1.png" alt="1.png"><br>这条命令的意思是-d参数打开反汇编程序内容 -M intel参数用于设置汇编代码格式因为ida使用的习惯所以设置为intel  后面跟上文件路径，然后导出为aa.txt文件并打开文件<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/2.png" alt="在这里插入图片描述"><br>打开后如图<br>和ida相比没有伪代码等功能只有一个看汇编命令的窗口<br>然后举例说明怎么寻找溢出点<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/3.png" alt="在这里插入图片描述"><br>先找到main函数开始查看<br>利用call函数寻找自定义函数跟进查看<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/4.png" alt="在这里插入图片描述"><br>然后寻找可能出现溢出的函数 比如fgets函数是读取指定数量的数据并保存到指定地址上 如图是调用函数然后eax入栈 ebp向上开辟0x28的空间然后读取0x32保存到eax当中。<br>因此这就造成了一个缓冲区溢出。<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/5.png" alt="在这里插入图片描述"><br>-t参数可以查看符号表 grep是过滤作用 F是显示函数名<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/6.png" alt="在这里插入图片描述"><br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/7.png" alt="在这里插入图片描述"><br>-j参数可以查看指定一个段的内容 还是上道题为例 因为bin/cat flag.txt为字符串所以需要到rodata寻找 -d参数是为了将查找的结果通过反汇编显示出来<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/8.png" alt="在这里插入图片描述"></p>
-<h2 id="GDB"><a href="#GDB" class="headerlink" title="GDB:"></a>GDB:</h2><p>gdb有个算是ui的操作界面<br>命令是gdb-tui 然后可以file装载文件<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/9.png" alt="在这里插入图片描述"><br>装载过后就需要和objdump一样改格式和打开汇编窗口了另外可以再打开一个寄存器窗口方便分析<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/10.png" alt="在这里插入图片描述"><br>第一条意思是更改格式为Intel 然后开启汇编和寄存器窗口<br>开启后如图<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/11.png" alt="在这里插入图片描述"><br>然后介绍一下快捷键：<br>b为下断点 可以b (函数名)或者b* (函数地址)<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/12.png" alt="在这里插入图片描述"><br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/13.png" alt="在这里插入图片描述"><br>然后就可以开启动态调试了<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/14.png" alt="在这里插入图片描述"><br>先要在python中打开文件获取pid<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/15.png" alt="在这里插入图片描述"><br>然后attach命令开启动态调试<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/16.png" alt="在这里插入图片描述"><br>然后使用c继续执行可以执行文件到需要输入的地方<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/17.png" alt="在这里插入图片描述"><br>然后发送一条数据<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/18.png" alt="在这里插入图片描述"><br>高亮就是这次发送数据发生变化的寄存器<br>另外还有 ni si<br>ni作用是运行一条函数 si则是跟进函数<br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/19.png" alt="在这里插入图片描述"><br><img src="/2019/11/28/objdump%E4%B8%8EGDB%E6%95%99%E7%A8%8B/20.png" alt="在这里插入图片描述"><br>而回车则是重复执行你输入的上一条指令。</p>
+        <h1 id="Easy-Encryption"><a href="#Easy-Encryption" class="headerlink" title="Easy_Encryption"></a>Easy_Encryption</h1><a id="more"></a>
+<p><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/1.png" alt="1"><br>题目<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/2.png" alt="2"><br>ida启动<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/3.png" alt="3"><br>Shift+F12查找字符串<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/4.png" alt="4"><br>找到flag字段然后利用X快捷键找到main<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/5.png" alt="5"><br>如图 前面是系统函数，直接看系统函数下第一条函数<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/6.png" alt="6"><br>不能F5<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/7.png" alt="7"><br>然后转汇编页面进去试试<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/8.png" alt="8"><br>然后找到不能f5的地方<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/9.png" alt="9"><br>然后把这条命令上面一条去掉就可以了<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/10.png" alt="10"><br>E重设置函数结尾，然后就能F5了<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/11.png" alt="11"><br>进入了一个算法，先不看，出去看main<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/12.png" alt="12"><br>进入一个if判定 进去查看判定条件<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/13.png" alt="13"><br>有个赋值，进去看<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/14.png" alt="14"><br>能看出来这是个base64加密，直接跳过<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/15.png" alt="15"><br>后面是一个字符串对比，找str1来自哪里<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/16.png" alt="16"><br>来自v6，因此只需要分析上面那个算法即可</p>
+<h3 id="算法提取出来解密如下"><a href="#算法提取出来解密如下" class="headerlink" title="算法提取出来解密如下:"></a>算法提取出来解密如下:</h3><p>table = list(‘ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/‘)<br>input = ‘artqkoehqpkbihv’</p>
+<p>for i in range(len(table)):<br>    temp = ord(table[i]) - ord(‘a’)<br>    if temp &lt; 0:<br>        temp *= -1<br>    table[i] = temp<br>def allTable(io):<br>    each = []<br>    for i in range(15):<br>        a = []<br>        for i2 in range(ord(‘a’), ord(‘z’) + 1):<br>            if (i2 + io[i] - ord(‘a’)) % 26 + ord(‘a’) &gt; ord(‘z’):<br>                stringb = chr((i2 + io[i] - ord(‘a’)) % 26 + ord(‘G’))<br>            else:<br>                stringb = chr((i2 + io[i] - ord(‘a’)) % 26 + ord(‘a’))<br>            a.append(stringb)<br>        each.append(a)<br>    return each</p>
+<p>table = allTable(table)<br>flag = ‘’<br>for i in range(len(input)):<br>    flag += chr(table[i].index(input[i]) + ord(‘a’))</p>
+<p>print flag</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    pass</p>
+<p><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/17.png" alt="17"><br>加密算法本身不难，解密算法由于懒得想，知道flag长度15位，加密算法只涉及到字符位置和字符，所以可以爆字符对应表，即可断点flag。</p>
 
     </div>
 
@@ -287,8 +283,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/objdump/" rel="tag"># objdump</a>
-              <a href="/tags/GDB/" rel="tag"># GDB</a>
+              <a href="/tags/%E5%AE%89%E6%B4%B5%E6%9D%AF/" rel="tag"># 安洵杯</a>
+              <a href="/tags/Easy-Encryption/" rel="tag"># Easy_Encryption</a>
           </div>
 
         
@@ -296,11 +292,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E6%9D%82%E9%A1%B9-WP/" rel="next" title="第二届安洵杯-杂项-WP">
-      第二届安洵杯-杂项-WP <i class="fa fa-chevron-right"></i>
+    <a href="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E6%9D%82%E9%A1%B9-WP/" rel="prev" title="第二届安洵杯-杂项-WP">
+      <i class="fa fa-chevron-left"></i> 第二届安洵杯-杂项-WP
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -338,7 +334,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#初识objdum与GDB"><span class="nav-number">1.</span> <span class="nav-text">初识objdum与GDB</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#objdump："><span class="nav-number">1.1.</span> <span class="nav-text">objdump：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GDB"><span class="nav-number">1.2.</span> <span class="nav-text">GDB:</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Easy-Encryption"><span class="nav-number">1.</span> <span class="nav-text">Easy_Encryption</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#算法提取出来解密如下"><span class="nav-number">1.0.1.</span> <span class="nav-text">算法提取出来解密如下:</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
