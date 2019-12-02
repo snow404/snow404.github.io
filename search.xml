@@ -9,7 +9,7 @@
 <p>for i in range(len(table)):<br>    temp = ord(table[i]) - ord(‘a’)<br>    if temp &lt; 0:<br>        temp *= -1<br>    table[i] = temp<br>def allTable(io):<br>    each = []<br>    for i in range(15):<br>        a = []<br>        for i2 in range(ord(‘a’), ord(‘z’) + 1):<br>            if (i2 + io[i] - ord(‘a’)) % 26 + ord(‘a’) &gt; ord(‘z’):<br>                stringb = chr((i2 + io[i] - ord(‘a’)) % 26 + ord(‘G’))<br>            else:<br>                stringb = chr((i2 + io[i] - ord(‘a’)) % 26 + ord(‘a’))<br>            a.append(stringb)<br>        each.append(a)<br>    return each</p>
 <p>table = allTable(table)<br>flag = ‘’<br>for i in range(len(input)):<br>    flag += chr(table[i].index(input[i]) + ord(‘a’))</p>
 <p>print flag</p>
-<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    pass<br>———————————————————————————————————————<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/17.png" alt="17"><br>加密算法本身不难，解密算法由于懒得想，知道flag长度15位，加密算法只涉及到字符位置和字符，所以可以爆字符对应表，即可断点flag。</p>
+<p>if <strong>name</strong> == ‘<strong>main</strong>‘:<br>    pass<br>———————————分割线——————————————<br><img src="/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/17.png" alt="17"><br>加密算法本身不难，解密算法由于懒得想，知道flag长度15位，加密算法只涉及到字符位置和字符，所以可以爆字符对应表，即可断点flag。</p>
 ]]></content>
       <categories>
         <category>WP</category>
