@@ -1151,7 +1151,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4b40f1;
+  background: #7c40ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2597,7 +2597,7 @@ ul.breadcrumb li + li:last-child {
   }
 }
 body {
-  background: url("/images/beijingtu.jpg");
+  background: url("/images/beijingtu.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
