@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>buuctf逆向-简单注册器-WP</title>
+    <url>/2019/12/10/buuctf%E9%80%86%E5%90%91-%E7%AE%80%E5%8D%95%E6%B3%A8%E5%86%8C%E5%99%A8-WP/</url>
+    <content><![CDATA[<h1 id="简单注册器"><a href="#简单注册器" class="headerlink" title="简单注册器"></a>简单注册器</h1><a id="more"></a>
+
+<p><img src="/2019/12/10/buuctf%E9%80%86%E5%90%91-%E7%AE%80%E5%8D%95%E6%B3%A8%E5%86%8C%E5%99%A8-WP/1.png" alt></p>
+<p>题目</p>
+<p><img src="/2019/12/10/buuctf%E9%80%86%E5%90%91-%E7%AE%80%E5%8D%95%E6%B3%A8%E5%86%8C%E5%99%A8-WP/2.png" alt></p>
+<p>下载下来发现是apk的安卓文件,就需要用到 jadx-gui 来进行反编译，jadx是专门用于安卓的反编译工具</p>
+<p><img src="/2019/12/10/buuctf%E9%80%86%E5%90%91-%E7%AE%80%E5%8D%95%E6%B3%A8%E5%86%8C%E5%99%A8-WP/3.png" alt></p>
+<p>打开后如图，可以直接查看源码</p>
+<p><img src="/2019/12/10/buuctf%E9%80%86%E5%90%91-%E7%AE%80%E5%8D%95%E6%B3%A8%E5%86%8C%E5%99%A8-WP/QQ%E5%9B%BE%E7%89%8720191210101828.png" alt></p>
+<p>初略看一眼很容易可以提炼到输出flag的语句</p>
+<p><img src="/2019/12/10/buuctf%E9%80%86%E5%90%91-%E7%AE%80%E5%8D%95%E6%B3%A8%E5%86%8C%E5%99%A8-WP/QQ%E5%9B%BE%E7%89%8720191210101959.png" alt></p>
+<p>由flag格式包裹起来的就是需要得到的值，直接看x来自哪里</p>
+<p><img src="/2019/12/10/buuctf%E9%80%86%E5%90%91-%E7%AE%80%E5%8D%95%E6%B3%A8%E5%86%8C%E5%99%A8-WP/QQ%E5%9B%BE%E7%89%8720191210102123.png" alt></p>
+<p>也就是说当if判定成功时通过这个算法得出flag，因此我们只需要将这一小段代码提出来用Java执行即可获得flag</p>
+<p><img src="/2019/12/10/buuctf%E9%80%86%E5%90%91-%E7%AE%80%E5%8D%95%E6%B3%A8%E5%86%8C%E5%99%A8-WP/QQ%E5%9B%BE%E7%89%8720191210102409.png" alt></p>
+<p>以上为提取出来的代码执行即可</p>
+<p><img src="/2019/12/10/buuctf%E9%80%86%E5%90%91-%E7%AE%80%E5%8D%95%E6%B3%A8%E5%86%8C%E5%99%A8-WP/QQ%E5%9B%BE%E7%89%8720191210103104.png" alt></p>
+]]></content>
+      <categories>
+        <category>WP</category>
+      </categories>
+      <tags>
+        <tag>buuctf</tag>
+        <tag>简单注册器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第二届安洵杯-逆向-WP</title>
     <url>/2019/12/02/%E7%AC%AC%E4%BA%8C%E5%B1%8A%E5%AE%89%E6%B4%B5%E6%9D%AF-%E9%80%86%E5%90%91-WP/</url>
     <content><![CDATA[<h1 id="Easy-Encryption"><a href="#Easy-Encryption" class="headerlink" title="Easy_Encryption"></a>Easy_Encryption</h1><a id="more"></a>
